@@ -55,18 +55,18 @@ int TicTacToe::checkForWin()
 void TicTacToe::displayBoard()
 {
     //system("cls");
-    cout<<"Player 1 (X)  -  Player 2 (O)\n"<<endl;
+    cout<<"\t\t"<<"Player 1 (X)  -  Player 2 (O)\n"<<endl;
 
-    cout<<"     |     |     "<<endl;
-    cout<<square[1]<<"    |  "<<square[2]<<"  |  "<<square[3]<<endl;
-    cout<<"_____|_____|_____"<<endl;
-    cout<<"     |     |     "<<endl;
-    cout<<square[4]<<"    |  "<<square[5]<<"  |  "<<square[6]<<endl;
-    cout<<"_____|_____|_____"<<endl;
-    cout<<"     |     |     "<<endl;
-    cout<<square[7]<<"    |  "<<square[8]<<"  |  "<<square[9]<<endl;
+    cout<<"\t\t"<<"     |     |     "<<endl;
+    cout<<"\t\t"<<square[1]<<"    |  "<<square[2]<<"  |  "<<square[3]<<endl;
+    cout<<"\t\t"<<"_____|_____|_____"<<endl;
+    cout<<"\t\t"<<"     |     |     "<<endl;
+    cout<<"\t\t"<<square[4]<<"    |  "<<square[5]<<"  |  "<<square[6]<<endl;
+    cout<<"\t\t"<<"_____|_____|_____"<<endl;
+    cout<<"\t\t"<<"     |     |     "<<endl;
+    cout<<"\t\t"<<square[7]<<"    |  "<<square[8]<<"  |  "<<square[9]<<endl;
 
-    cout<<"     |     |     "<<endl;
+    cout<<"\t\t"<<"     |     |     "<<endl;
 }
 
 
@@ -98,9 +98,9 @@ int main()
 
     game.player = 1;
 
-    cout<<"\t\t"<<"=========================================================================================================="<<endl;
-    cout<<"\t\t\t\t\t\t\t\tTic Tac Toe"<<endl;
-    cout<<"\t\t"<<"==========================================================================================================\n\n\n"<<endl;
+    cout<<"\t\t"<<"=============================================================================================="<<endl;
+    cout<<"\t\t\t\t\t\t\tTic Tac Toe"<<endl;
+    cout<<"\t\t"<<"==============================================================================================\n\n"<<endl;
 
     do
     {
@@ -108,7 +108,7 @@ int main()
 
       game.player = (game.player % 2) ? 1 : 2;
 
-      cout<<"Player "<<game.player<<": ";
+      cout<<"\t\t"<<"Player "<<game.player<<": ";
       cin>>game.choice;
       mark = (game.player == 1) ? 'X' : 'O';
 
