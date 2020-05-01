@@ -73,7 +73,7 @@ void TicTacToe::displayBoard()
 void TicTacToe::markBoard(char mark)
 {
        
-    if ((choice >= 1 && choice <=9 && (square[choice] == 'X' && square[choice] == 'O' )) || (choice <1 || choice >9) )
+    if ((choice >= 1 && choice <=9 && (square[choice] == 'X' || square[choice] == 'O' )) || (choice <1 || choice >9) )
     {
         cout<<"\t\t\t\t\t||||****************** INVALID MOVE ***********************||||\n\n"<<endl;
 
